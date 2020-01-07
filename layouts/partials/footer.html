@@ -4,11 +4,11 @@
 
 <div class="copyright">
   <span class="power-by">
-    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+    Powered by <a rel="nofollow" class="hexo-link" href="https://gohugo.io">Hugo</a>
   </span>
   <span class="division">|</span>
   <span class="theme-info">
-    Theme - <a class="theme-link" href="https://github.com/xianmin/hugo-theme-jane">Jane</a>
+    Theme - <a rel="nofollow" class="theme-link" href="https://github.com/xianmin/hugo-theme-jane">Jane</a>
   </span>
 
   <span class="copyright-year">
@@ -37,6 +37,12 @@
   {{ if .Site.Params.counter.busuanzi.enable }}
     <span id="busuanzi_container">
       访客数/访问量：<span id="busuanzi_value_site_uv"></span>/<span id="busuanzi_value_site_pv"></span>
+    </span>
+  {{ end }}
+
+  {{ if .Site.Params.icp }}
+    <span>
+      <a rel="nofollow" href="http://www.beian.miit.gov.cn" target="_blank"  style="color:#666; font-size:12px;">{{ .Site.Params.icp }}</a>
     </span>
   {{ end }}
 
